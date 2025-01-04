@@ -1,0 +1,91 @@
+
+#flat-form h2,#dynamic-form h2{
+    text-align: center;
+    margin-top: 24px;
+    font-size: var(--font-size-medium);
+}
+
+#dynamic-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container.hasAC{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    gap: 75%;
+    
+}
+
+#hasAC{
+    width: 20px;
+    height: 20px;
+}
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+
+.error-span {
+    color: #e74c3c;
+    font-size: var(--font-size-small);
+    margin-top: 4px;
+}
+
+
+label {
+    font-size: var(--font-size-small);
+    color: #333;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+  
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #2980b9;
+}
+
+
+#login-btn,#add-flat-btn{
+    background-color: var(--main-color);
+}
+
+#login-btn:hover{
+    opacity: 0.9;
+}
+
+#login-error{
+    margin: 0 auto;
+    text-align: center;
+}
